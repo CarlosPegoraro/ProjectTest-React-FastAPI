@@ -1,11 +1,20 @@
 import mysql.connector
 
-conexao = mysql.connector.connect(
-    host="localhost", 
-    port="3306",
-    user="root",
-    password="",
-    database="testbd"
-)
+def MySQLConnection():
+    conexao = mysql.connector.connect(
+        host="localhost", 
+        port="3306",
+        user="root",
+        password="",
+        database="testdb"
+    )
 
-cursor = conexao.cursor()
+    return conexao
+
+def MySQLClose():
+    
+    conexao = MySQLConnection()
+    cursor = conexao.cursor()
+    
+    cursor.close()
+    conexao.close()
