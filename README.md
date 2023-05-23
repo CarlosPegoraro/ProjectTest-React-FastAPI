@@ -1,1 +1,1 @@
-# ProjectTest-React-FastAPI
+# tutorial_fastapi_react

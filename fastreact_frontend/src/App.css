@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eaeaea;
+  box-shadow: #25252570 0px 2px 4px;
+  padding: 1% 5%;
+  border-radius: 0.5rem;
+}
+
+.username {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #252525;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+}
+.saldo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #252525;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.userData {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.positive {
+  color: #20dd7070;
+}
+
+.neutral {
+  color: #d6aa17;
+}
+.negative {
+  color: #ee4010;
+}
+
